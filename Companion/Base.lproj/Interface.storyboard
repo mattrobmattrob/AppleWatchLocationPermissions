@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14868" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14643"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Companion" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Location status:" id="YWY-gq-ooe"/>
+                        <label alignment="left" text="0" id="LnF-fq-TI4"/>
+                        <button width="1" alignment="left" title="Request When in Use" id="wDx-Jp-g7a" userLabel="Request When in Use">
+                            <connections>
+                                <action selector="requestWhenInUse" destination="AgC-eL-Hgc" id="q5D-rP-ayM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Start location updates" id="mjP-Fw-3Ig">
+                            <connections>
+                                <action selector="startLocationUpdates" destination="AgC-eL-Hgc" id="azv-qS-SXW"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" id="SwR-ET-zL1"/>
+                    </items>
+                    <connections>
+                        <outlet property="lastLocationLabel" destination="SwR-ET-zL1" id="SHs-vc-MLM"/>
+                        <outlet property="locationAuthLabel" destination="LnF-fq-TI4" id="Nc8-hE-8v1"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+</document>
